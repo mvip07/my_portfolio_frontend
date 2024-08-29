@@ -1,0 +1,363 @@
+@import url("./assets/css/darkMode.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --light: rgb(238, 238, 238);
+    --black: rgb(19, 19, 19);
+    --white: rgb(255, 255, 255);
+    --mainCl: rgb(247, 143, 66);
+    --darkGrey: rgb(137, 137, 137);
+    --darkMode: rgb(28, 28, 28);
+    --darkWhite: rgb(246, 246, 246);
+    --darkBlack: rgb(15, 15, 15);
+    --whiteOpa: #ffffff33;
+    --lightOrange: rgba(247, 143, 66, 0.1);
+    ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+i,
+button {
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--darkWhite);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.loader {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid var(--white);
+    border-bottom-color: transparent;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body .section {
+    margin-top: 70px;
+}
+
+body .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+body .section-description {
+    opacity: 60%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .section-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.modal-md-content,
+.modal-sm-content {
+    top: 50%;
+    left: 50%;
+    display: none;
+    position: fixed;
+    border-radius: 12px;
+    background: var(--white);
+    transform: translate(-50%, -50%);
+}
+
+.modal-md-content {
+    width: 768px;
+}
+
+.modal-sm-content {
+    width: 576px;
+}
+
+.modal-md-content.active,
+.modal-sm-content.active {
+    display: block;
+}
+
+@media (max-width: 992px) {
+
+    .modal-md-content,
+    .modal-sm-content {
+        width: 90%;
+    }
+}
+
+.modal {
+    padding: 24px;
+}
+
+.modal .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal .modal-header .close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: var(--darkWhite);
+}
+
+.modal .modal-header .close i {
+    opacity: 60%;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.modal .line {
+    width: 100%;
+    height: 1px;
+    opacity: 10%;
+    margin: 12px 0;
+    background: var(--black);
+}
+
+.modal .modal-body {
+    overflow: auto;
+    min-height: 100%;
+    max-height: 400px;
+}
+
+.modal .modal-body .form .form-group {
+    width: 100%;
+}
+
+.modal .modal-body .form .form-group label {
+    opacity: 80%;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: var(--black);
+    font-family: "Inter";
+}
+
+.modal .modal-body .form .form-group {
+    margin: 10px 0;
+}
+
+.modal .modal-body .form .form-group input,
+.modal .modal-body .form .form-group select,
+.modal .modal-body .form .form-group textarea {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background: var(--darkWhite);
+}
+
+.modal .modal-body .form .form-group textarea {
+    resize: none;
+}
+
+.modal .modal-body .form .form-group .upload {
+    width: 100%;
+    height: 180px;
+    margin-top: 24px;
+    position: relative;
+    border-radius: 12px;
+    background: var(--lightOrange);
+    border: 1px dashed var(--mainCl);
+}
+
+.modal .modal-body .form .form-group .upload input[type=file] {
+    display: none;
+}
+
+.modal .modal-body .form .form-group .upload label {
+    top: 50%;
+    left: 50%;
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    transform: translate(-50%, -50%);
+}
+
+.modal .modal-body .form .form-group .upload label i {
+    font-size: 24px;
+    color: var(--mainCl);
+}
+
+.modal .modal-body .form .form-group .upload p {
+    opacity: 60%;
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+}
+
+.modal .modal-body .text {
+    opacity: 60%;
+    margin: 24px 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+}
+
+.modal .modal-footer .btn-group {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal .modal-footer .submit {
+    gap: 10px;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    background: var(--mainCl);
+    text-transform: capitalize;
+}
+
+@keyframes slideInOut {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-out {
+    transform: translateX(0);
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation: slideInOut 1s ease-in-out;
+}
+
+@keyframes slideInOutRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-out-right {
+    transform: translateX(0);
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation: slideInOutRight 1s ease-in-out;
+}
+
+@keyframes wipe {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.wipe {
+    clip-path: inset(0 0 0 0);
+    animation-timeline: view();
+    animation: wipe 4s ease-in-out;
+    animation-range: entry 0% cover 40%;
+}
+
+.appear {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

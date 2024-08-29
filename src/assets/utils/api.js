@@ -1,0 +1,1 @@
+export const host = `https://my-portfolio-backend-mvip.vercel.app/`

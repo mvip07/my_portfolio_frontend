@@ -1,0 +1,681 @@
+body.active {
+    background: var(--black);
+}
+
+body.active #lmenu {
+    background: var(--darkMode);
+}
+
+body.active #lmenu .user .user-image {
+    border: 2px solid var(--white);
+}
+
+body.active #lmenu .user .user-name {
+    color: var(--white);
+}
+
+body.active #lmenu .line {
+    opacity: 10%;
+    background: var(--white);
+}
+
+body.active #lmenu .user-information .item p {
+    color: var(--white);
+}
+
+body.active #lmenu .user-information .item .item-right p {
+    opacity: 60%;
+    color: var(--white);
+}
+
+body.active #lmenu .progress-content-title {
+    color: var(--white);
+}
+
+body.active #lmenu .progress-title {
+    color: var(--white);
+}
+
+body.active #lmenu .progress-number {
+    color: var(--white);
+}
+
+body.active #lmenu .progress-border {
+    background: var(--darkBlack);
+}
+
+body.active #lmenu .extra-skill-title {
+    color: var(--white);
+}
+
+body.active #rmenu {
+    background: var(--darkMode);
+}
+
+body.active #rmenu .top .bars,
+body.active #rmenu .center .item,
+body.active #rmenu .bottom .item,
+body.active #rmenu .top .darkLight {
+    background: var(--darkBlack);
+}
+
+body.active #rmenu .top .bars i,
+body.active #rmenu .center .item i,
+body.active #rmenu .bottom .item i,
+body.active #rmenu .top .darkLight i {
+    color: var(--white);
+}
+
+body.active #rmenu .top .bars.active,
+body.active #rmenu .center .item.active,
+body.active #rmenu .bottom .item.active,
+body.active #rmenu .top .darkLight.active {
+    background: var(--mainCl);
+}
+
+body.active #tmenu {
+    background: var(--darkMode);
+}
+
+body.active #tmenu .icons .item {
+    background: var(--darkBlack);
+}
+
+body.active #tmenu .icons .item .icon {
+    color: var(--white);
+}
+
+body.active #tmenu .icons .item.active {
+    background: var(--mainCl);
+}
+
+body.active #tmenu .icons .item.active .icon {
+    color: var(--white);
+}
+
+body.active #about {
+    background: var(--darkMode);
+}
+
+body.active #about .user-name {
+    color: var(--white);
+}
+
+body.active #about .user-description {
+    color: var(--white);
+}
+
+body.active #about .hire-me-btn {
+    color: var(--black);
+}
+
+body.active #about .hire-me-btn .circle {
+    background: var(--black);
+}
+
+body.active #about .hire-me-btn .circle i {
+    color: var(--white);
+}
+
+body.active #service .services .item {
+    background: var(--darkMode);
+}
+
+body.active #service .service-img {
+    background: var(--black);
+}
+
+body.active .service-title {
+    color: var(--white);
+}
+
+body.active .description {
+    color: var(--white);
+}
+
+body.active .service-body .bx {
+    color: var(--white);
+}
+
+body.active #work .works,
+body.active #education .educations {
+    background: var(--darkMode);
+}
+
+body.active #work .works .line:not(.line:last-child),
+body.active #education .educations .line:not(.line:last-child) {
+    opacity: 10%;
+    background: var(--white);
+}
+
+body.active #work .company-name,
+body.active #education .company-name {
+    color: var(--white);
+}
+
+body.active #work .location,
+body.active #education .location {
+    color: var(--white);
+}
+
+body.active #work .year,
+body.active #education .year {
+    color: var(--white);
+}
+
+body.active #work .field-of-study,
+body.active #education .field-of-study {
+    color: var(--white);
+}
+
+body.active #work .description,
+body.active #education .description {
+    color: var(--white);
+}
+
+@media (max-width: 992px) {
+
+    body.active #work .left,
+    body.active #education .left {
+        border-left: 2px solid var(--whiteOpa);
+    }
+}
+
+body.active #project .category.active .category-title {
+    color: var(--mainCl);
+}
+
+body.active #project .category .category-title {
+    color: var(--white);
+}
+
+body.active #project .project {
+    background: var(--darkMode);
+}
+
+body.active #project .project .front {
+    background: var(--darkMode);
+}
+
+body.active #project .project .front .body .project-title {
+    color: var(--white);
+}
+
+body.active #project .project .front .body .project-description {
+    opacity: 50%;
+    color: var(--white);
+}
+
+body.active #project .project .back {
+    background: var(--darkMode);
+}
+
+body.active #project .project .back .body .project-description {
+    opacity: 60%;
+    color: var(--white);
+}
+
+body.active #contact .form {
+    background: var(--darkMode);
+}
+
+body.active #contact .form-title {
+    color: var(--white);
+}
+
+body.active #contact .form-label {
+    color: var(--white);
+}
+
+body.active #contact .form-input {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #contact .item {
+    background: var(--darkMode);
+}
+
+body.active #contact .body-flex .title {
+    color: var(--white);
+}
+
+body.active #contact .body-flex .description {
+    opacity: 60%;
+    color: var(--white);
+}
+
+body.active .section-title {
+    color: var(--white);
+}
+
+body.active .section-description {
+    color: var(--white);
+}
+
+body.active #lmenu2 {
+    background: var(--darkMode);
+}
+
+body.active #lmenu2 .flex .top .bars,
+body.active #lmenu2 .flex .top .darkLight {
+    background: var(--black);
+}
+
+body.active #lmenu2 .flex .top .bars i,
+body.active #lmenu2 .flex .top .darkLight i {
+    color: var(--white);
+}
+
+body.active #lmenu2 .flex .bottom {
+    background: var(--black);
+}
+
+body.active #lmenu2 .user img {
+    border: 2px solid var(--white);
+}
+
+body.active #lmenu2 .user h1 {
+    color: var(--white);
+}
+
+body.active #lmenu2 .menu-link ul li a {
+    color: var(--white);
+}
+
+body.active #lmenu2 .line {
+    background: var(--white);
+}
+
+body.active #tmenu2 {
+    background: var(--darkMode);
+}
+
+body.active #tmenu2 .flex .userImage.active {
+    background: var(--darkMode);
+}
+
+body.active #tmenu2 .flex .icons .item {
+    background: var(--mainCl);
+}
+
+body.active #about2 .d-flex {
+    background: var(--darkMode);
+}
+
+body.active #about2 .d-flex .user-text .name {
+    color: var(--white);
+}
+
+body.active #about2 .d-flex .user-text .email,
+body.active #about2 .d-flex .user-text .telephone,
+body.active #about2 .d-flex .user-text .description {
+    color: var(--white);
+}
+
+body.active #about2 .crud-icons .item {
+    background: var(--black);
+}
+
+body.active #about2 .crud-icons .item.active {
+    background: var(--mainCl);
+}
+
+body.active #about2 .crud-icons .item i {
+    color: var(--white);
+}
+
+body.active #service2 .service-header h2 {
+    color: var(--white);
+}
+
+body.active #service2 .services .item {
+    background: var(--darkMode);
+}
+
+body.active #service2 .services .item .crud-icons .icon-item {
+    background: var(--black);
+}
+
+body.active #service2 .services .item .crud-icons .icon-item i {
+    color: var(--white);
+}
+
+body.active #service2 .services .item img {
+    background: var(--black);
+}
+
+body.active #service2 .services .item h3 {
+    color: var(--white);
+}
+
+body.active #service2 .services .item p {
+    opacity: 60%;
+    color: var(--white);
+}
+
+body.active #service2 .services .item .description i.bx {
+    opacity: 60%;
+    color: var(--white);
+}
+
+body.active #service2 .services .item .description .service-item-icon p {
+    color: var(--white);
+}
+
+body.active #service2 .services .item .description .service-item-icon .icon-child {
+    background: var(--black);
+}
+
+body.active #service2 .services .item .description .service-item-icon .icon-child i {
+    color: var(--white);
+}
+
+
+body.active #education2 .education-header h2 {
+    color: var(--white);
+}
+
+body.active #education2 .education-content {
+    background: var(--darkMode);
+}
+
+body.active #education2 .education-content .line:not(.education-content .line:last-child) {
+    background: var(--white);
+}
+
+body.active #education2 .flex .left h3 {
+    color: var(--white);
+}
+
+body.active #education2 .flex .left .location {
+    color: var(--white);
+}
+
+body.active #education2 .flex .left .year {
+    opacity: 1;
+    color: var(--white);
+}
+
+body.active #education2 .flex .right h3 {
+    color: var(--white);
+}
+
+body.active #education2 .flex .right p {
+    color: var(--white);
+}
+
+body.active #education2 .flex .right .icons .icon-item {
+    background: var(--black);
+}
+
+body.active #education2 .flex .right .icons .icon-item i {
+    color: var(--white);
+}
+
+@media (max-width: 992px) {
+    body.active #education2 .flex .left {
+        border-left: 2px solid var(--white);
+    }
+}
+
+
+body.active #work2 .work-header h2 {
+    color: var(--white);
+}
+
+body.active #work2 .work-content {
+    background: var(--darkMode);
+}
+
+body.active #work2 .work-content .line:not(.work-content .line:last-child) {
+    background: var(--white);
+}
+
+body.active #work2 .flex .left h3 {
+    color: var(--white);
+}
+
+body.active #work2 .flex .left .location {
+    color: var(--white);
+}
+
+body.active #work2 .flex .left .year {
+    color: var(--white);
+}
+
+body.active #work2 .flex .right h3 {
+    color: var(--white);
+}
+
+body.active #work2 .flex .right p {
+    color: var(--white);
+}
+
+body.active #work2 .flex .right .icons .icon-item {
+    background: var(--black);
+}
+
+body.active #work2 .flex .right .icons .icon-item i {
+    color: var(--white);
+}
+
+@media (max-width: 992px) {
+    body.active #work2 .flex .left {
+        border-left: 2px solid var(--white);
+    }
+}
+
+
+body.active #project2 .project-header h2 {
+    color: var(--white);
+}
+
+body.active #project2 .technology {
+    background: var(--darkMode);
+}
+
+body.active #project2 .technology .technology-header select {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #project2 .technology .title {
+    color: var(--white);
+}
+
+body.active #project2 .technology table {
+    border: 1px solid var(--black);
+}
+
+body.active #project2 .technology table tbody tr {
+    color: var(--white);
+    background: var(--darkMode);
+}
+
+body.active #project2 .technology table tbody tr .icons .icon-item {
+    background: var(--black);
+}
+
+body.active #project2 .technology table tbody tr .icons .icon-item i {
+    color: var(--white);
+}
+
+body.active #project2 .projects .item {
+    background: var(--darkMode);
+}
+
+body.active #project2 .projects .item .front {
+    background: var(--darkMode);
+}
+
+body.active #project2 .projects .item .front .card-body .icons .icon-item {
+    background: var(--black);
+}
+
+body.active #project2 .projects .item .front .card-body .icons .icon-item i {
+    color: var(--white);
+}
+
+body.active #project2 .projects .item .front .card-body h3 {
+    color: var(--white);
+}
+
+body.active #project2 .projects .item .front .card-body p {
+    color: var(--white);
+}
+
+body.active #project2 .projects .item .back {
+    background: var(--darkMode);
+}
+
+body.active #project2 .projects .item .back .card-body .text p {
+    color: var(--white);
+}
+
+body.active #permission {
+    background: var(--darkMode);
+}
+
+body.active #permission .permission-header .title {
+    color: var(--white);
+}
+
+body.active #permission .permission-header select {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #permission .permission-header .icons .item {
+    background: var(--black);
+}
+
+body.active #permission .permission-body table tbody tr {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #permission .permission-body table tbody tr:nth-child(even) {
+    background: var(--darkMode);
+}
+
+body.active #permission .permission-body table tbody tr .icons .item {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #role {
+    background: var(--darkMode);
+}
+
+body.active #role .role-header .title {
+    color: var(--white);
+}
+
+body.active #role .role-header select {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #role .role-header .icons .item {
+    background: var(--black);
+}
+
+body.active #role .role-body table tbody tr {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #role .role-body table tbody tr select {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #role .role-body table tbody tr:nth-child(even) {
+    background: var(--darkMode);
+}
+
+body.active #role .role-body table tbody tr .icons .item {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #visitorAnalytics {
+    background: var(--darkMode);
+}
+
+body.active #visitorAnalytics h2 {
+    color: var(--white);
+}
+
+body.active #totalView {
+    background: var(--darkMode);
+}
+
+body.active #totalView .item:not(body.active #totalView .item:last-child) {
+    border-right: 1px solid var(--white);
+}
+
+body.active #totalView .item h2 {
+    color: var(--white);
+}
+
+body.active #totalView .item p {
+    color: var(--white);
+}
+
+@media (max-width: 992px) {
+    body.active #totalView .item:not(body.active #totalView .item:last-child) {
+        border-right: 0;
+    }
+
+    body.active #totalView .item:not(body.active #totalView .item:nth-child(3), body.active #totalView .item:nth-child(4)) {
+        border-bottom: 1px solid var(--white);
+    }
+}
+
+@media (max-width: 768px) {
+    body.active #totalView .item:not(body.active #totalView .item:last-child) {
+        border-bottom: 1px solid var(--white);
+    }
+}
+
+body.active #country {
+    background: var(--darkMode);
+}
+
+body.active #country .country-header h2 {
+    color: var(--white);
+}
+
+body.active #country .country-header .sortedContent input,
+body.active #country .country-header .sortedContent select {
+    color: var(--white);
+    background: var(--black);
+    border: 1px solid var(--darkMode);
+}
+
+body.active #country table tbody tr {
+    color: var(--white);
+    background: var(--black);
+}
+
+body.active #country table tbody tr:nth-child(even) {
+    background: var(--darkMode);
+}
+
+body.active #country table tbody tr .progress-bg {
+    background: var(--darkMode);
+}
+
+body.active #country table tbody tr:nth-child(even) .progress-bg {
+    background: var(--black);
+}
+
+body.active #device {   
+    background: var(--darkMode);
+}
+
+body.active #device h2 {
+    color: var(--white);
+}
