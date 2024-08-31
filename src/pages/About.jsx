@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import Context from "../component/Context";
-import { host } from "../assets/utils/api";
 
 export const About = () => {
 	const { data } = useContext(Context)
@@ -24,7 +23,7 @@ export const About = () => {
 				</div>
 			</div>
 			<div className="user-image">
-				<img className="user-img" src={`${host}/${data?.about?.image}`} alt="User Img" />
+				<img className="user-img" src={data?.about?.image} alt="User Img" />
 			</div>
 		</AboutP>
 	);

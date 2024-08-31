@@ -1,6 +1,5 @@
 import React from "react";
 import { useAbout } from "./useAbout";
-import { host } from "../../../assets/utils/api";
 import { PageNotFound } from "../../../pages/PageNotFound";
 import { AboutP, CreateModal, UpdateModal, DeleteModal } from "./styledComponents";
 
@@ -26,7 +25,7 @@ export const About = () => {
                 <>
                     <div className="d-flex">
                         <div className="user-img">
-                            <img src={`${host}/${aboutData.image}`} alt="" width="100%" height="100%" />
+                            <img src={aboutData.image} alt="" width="100%" height="100%" />
                         </div>
                         <div className="user-text">
                             <h1 className="name">I am {aboutData.name} {aboutData.profession}</h1>
@@ -47,7 +46,7 @@ export const About = () => {
                         </div>
                     </div>
                     <div style={{ width: '100%', height: '100%', marginTop: "32px" }}>
-                        <iframe src={`${host}/${aboutData.cv}`} style={{ width: '100%', height: '50%' }}></iframe>
+                        <iframe src={aboutData.cv} style={{ width: '100%', height: '50%' }}></iframe>
                     </div>
                 </>
             ) : <PageNotFound text={"About Page"} navigateUrl={"/dashboard/about"} />}
@@ -86,7 +85,7 @@ export const About = () => {
                             </div>
                             <div className="form-group">
                                 <div className="file-preview">
-                                    <img src={preview.image || `${host}/${aboutData.image}`} width="300px" height="300px" alt="" />
+                                    <img src={preview.image || aboutData.image} width="300px" height="300px" alt="" />
                                 </div>
                                 <div className="upload">
                                     <label htmlFor="image"><i className="fa-solid fa-upload"></i></label>
@@ -96,7 +95,7 @@ export const About = () => {
                             </div>
                             <div className="form-group">
                                 <div className="file-preview">
-                                    <embed src={preview.cv || `${host}/${aboutData.cv}`} type="application/pdf" width="100%" height="300px" />
+                                    <embed src={preview.cv || aboutData.cv} type="application/pdf" width="100%" height="300px" />
                                 </div>
                                 <div className="upload">
                                     <label htmlFor="cv"><i className="fa-solid fa-upload"></i></label>
@@ -149,7 +148,7 @@ export const About = () => {
                             </div>
                             <div className="form-group">
                                 <div className="file-preview">
-                                    <img src={preview.image || `${host}/${aboutData.image}`} width="300px" height="300px" alt="" />
+                                    <img src={preview.image || aboutData.image} width="300px" height="300px" alt="" />
                                 </div>
                                 <div className="upload">
                                     <label htmlFor="image2"><i className="fa-solid fa-upload"></i></label>
@@ -159,7 +158,7 @@ export const About = () => {
                             </div>
                             <div className="form-group">
                                 <div className="file-preview">
-                                    <embed src={preview.cv || `${host}/${aboutData.cv}`} type="application/pdf" width="100%" height="300px" />
+                                    <embed src={preview.cv || aboutData.cv} type="application/pdf" width="100%" height="300px" />
                                 </div>
                                 <div className="upload">
                                     <label htmlFor="cv2"><i className="fa-solid fa-upload"></i></label>

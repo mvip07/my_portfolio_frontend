@@ -1,8 +1,6 @@
-import styled from "styled-components";
-
 import { useContext } from "react";
+import styled from "styled-components";
 import Context from "../component/Context";
-import { host } from "../assets/utils/api";
 
 export const MyServices = () => {
     const { data } = useContext(Context)
@@ -18,7 +16,7 @@ export const MyServices = () => {
                 {
                     data?.service && data?.service.map((i, index) => (
                         <div className="item appear" key={index}>
-                            <img className="service-img" src={`${host}/${i.icon}`} alt="Service Image" />
+                            <img className="service-img" src={i.icon} alt="Service Image" />
                             <h3 className="service-title">{i.title}</h3>
                             {
                                 i.items && i.items.map((j, ind) => (

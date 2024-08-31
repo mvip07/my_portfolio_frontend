@@ -1,5 +1,4 @@
 import { useProject } from "./useProject"
-import { host } from "../../../assets/utils/api"
 import { PageNotFound } from "../../../pages/PageNotFound"
 
 import {
@@ -463,7 +462,7 @@ export const Project = () => {
                             <div className="form-group">
                                 {
                                     preview.image ? <img width="200px" height="200px" src={preview.image} alt="Project Image" />
-                                        : <img width="200px" height="200px" src={`${host}/${project?.image}`} alt="Project Image" />
+                                        : <img width="200px" height="200px" src={project?.image} alt="Project Image" />
 
                                 }
                                 <div className="upload">

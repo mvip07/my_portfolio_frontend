@@ -1,7 +1,6 @@
 import Context from "./Context";
 import { useContext } from "react";
 import styled from "styled-components";
-import { host } from "../assets/utils/api";
 
 export const LeftMenu = () => {
     const { data, leftMenu } = useContext(Context)
@@ -10,7 +9,7 @@ export const LeftMenu = () => {
         <LMenu id="lmenu" className={`slide-in-out ${leftMenu ? "active" : ""}`}>
             <center>
                 <div className="user">
-                    <img className="user-image" src={`${host}/${data?.about?.image}`} width="150px" height="150px" alt="User Image" />
+                    <img className="user-image" src={data?.about?.image} width="150px" height="150px" alt="User Image" />
                     <h1 className="user-name">{data?.about?.name}</h1>
                     <div className="user-profession-bg">
                         <p className="user-profession-title">{data?.about?.profession}</p>
@@ -20,7 +19,7 @@ export const LeftMenu = () => {
                             data.socialMedia?.map((media, index) => (
                                 <a href={media.url} key={index} target="_blank" className="item">
                                     <i className={`icon ${media.title}`}></i>
-                                    {/* <img className="icon" src={`${host}/${media.icon}`} alt="Image" width="20px" height="20px" /> */}
+                                    {/* <img className="icon" src={media.icon} alt="Image" width="20px" height="20px" /> */}
 
                                 </a>
                             ))
@@ -122,7 +121,7 @@ export const LeftMenu = () => {
             <div className="line"></div>
 
             <div className="footer">
-                <a className="download-cv" target="blank" href={`${host}/${data?.about?.cv}`} download={data?.about?.name}>
+                <a className="download-cv" target="blank" href={data?.about?.cv} download={data?.about?.name}>
                     Download CV <i className="icon bx bx-download"></i>
                 </a>
             </div>
@@ -191,7 +190,7 @@ export const TopMenu = () => {
         <TMenu id="tmenu">
             <div className="flex-content">
                 <div className="user-image">
-                    <img className="user-img" src={`${host}/${data?.about?.image}`} width="36px" height="36px" alt="" />
+                    <img className="user-img" src={data?.about?.image} width="36px" height="36px" alt="" />
                 </div>
                 <div className="icons">
                     <div className={`item ${rightMenu ? "active" : ""}`} onClick={changeActiveRightMenu}>

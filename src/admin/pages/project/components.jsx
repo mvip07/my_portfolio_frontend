@@ -1,6 +1,4 @@
-import { useCallback, useState } from "react";
-import { host } from "../../../assets/utils/api";
-import { useProject } from "./useProject";
+import { useState } from "react";
 
 export const TechnologyItem = ({ getObject, data, setActive, index }) => {
     return (
@@ -68,7 +66,7 @@ export const ProjectItem = ({ getObject, data, setActive, index }) => {
         <div className={`item ${activeCard ? "active" : ""}`}>
             <div className="front">
                 <div className="card-header">
-                    <img src={`${host}/${data.image}`} className="project-img" width="100%" height="100%" alt="Card Images" />
+                    <img src={data.image} className="project-img" width="100%" height="100%" alt="Card Images" />
                 </div>
                 <div className="card-body">
                     <div className="icons">

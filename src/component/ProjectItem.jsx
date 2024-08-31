@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { host } from "../assets/utils/api"
 
 export const ProjectItem = ({ data }) => {
     const [active, setActive] = useState(false)
@@ -7,7 +6,7 @@ export const ProjectItem = ({ data }) => {
         <div className="appear">
             <div className={`project ${active ? "active" : ""}`}>
                 <div className="front">
-                    <img className="project-img" src={`${host}/${data.image}`} alt="" />
+                    <img className="project-img" src={data.image} alt="" />
                     <div className="body">
                         <h3 className="project-title">{data.title}</h3>
                         <p className="project-description">{data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}</p>

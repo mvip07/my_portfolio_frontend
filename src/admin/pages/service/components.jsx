@@ -1,10 +1,9 @@
-import { memo, useCallback } from "react";
-import { host } from "../../../assets/utils/api";
+import { memo } from "react";
 
 export const ServiceItem = memo(({ data, getId }) => {
     return (
         <div className="item">
-            <img src={`${host}/${data.icon}`} alt="Services Image" />
+            <img src={data.icon} alt="Services Image" />
             <h3 title={`Created At: ${data.createdAt}\nUpdated At: ${data.updatedAt}`}>{data.title}</h3>
             <p>{data.description}</p>
             <div className="crud-icons">
