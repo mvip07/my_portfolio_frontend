@@ -1,6 +1,6 @@
 Here's an extended README.md description title for your "My Portfolio Frontend" project, designed to be detailed and visually appealing with the use of technology stickers:
 
-```markdown
+
 # 🚀 My Portfolio Frontend
 
 Welcome to **My Portfolio Frontend**, the dynamic showcase of my journey as a web developer, where creativity meets functionality. This project represents my skills, passion, and dedication to crafting exceptional web experiences.
@@ -89,6 +89,5 @@ Thanks to the open-source community and the developers behind React.js, FontAwes
 Explore, contribute, or get in touch if you have any questions. I hope you enjoy exploring my portfolio as much as I enjoyed building it!
 
 **Happy Coding!** 😊
-```
 
 This description is detailed and designed to captivate the reader while providing all the necessary information about your "My Portfolio Frontend" project. The stickers add a fun and modern touch to the README.md, making it visually appealing and engaging.
