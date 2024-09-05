@@ -6,10 +6,10 @@ export const About = () => {
 	const { data } = useContext(Context)
 
 	return (
-		<AboutP id="about" className="about piece appear">
+		<AboutP id="about" className="about piece">
 			<div className="user">
 				<h1 className="user-name wipe">I'm {data?.about?.name}<br />
-					<span className="user-profession wipe">{data?.about?.profession}</span>
+					<span className="user-profession">{data?.about?.profession}</span>
 				</h1>
 				<p className="user-description">{data?.about?.description}</p>
 
@@ -40,9 +40,9 @@ const AboutP = styled.div`
 	justify-content: space-between;
 
 	.user-name {
-		font-size: 48px;
+		font-size: 36px;
 		font-weight: 600;
-		line-height: 56px;
+		line-height: 46px;
 		color: var(--black);
 		text-transform: capitalize;
 	}
@@ -89,7 +89,7 @@ const AboutP = styled.div`
 	}
 
 	.user-image {
-		height: auto;
+		height: 400px;
 		min-width: 300px;
 		max-width: 350px;
 		max-height: 460px;

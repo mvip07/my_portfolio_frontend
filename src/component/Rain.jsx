@@ -54,7 +54,7 @@ export const Rain = () => {
         `;
 
         rain.style.left = Math.floor(Math.random() * 100) + "%";
-        rain.style.animationDuration = Math.random() * 3 + 2 + "s";
+        rain.style.animationDuration = Math.floor(Math.random() * 3 + 2) + "s";
 
         rainContent.appendChild(rain);
 
@@ -64,7 +64,7 @@ export const Rain = () => {
     useEffect(() => {
         let interval;
         if (rainActive) {
-            interval = setInterval(() => createRainElement(), 1000);
+            interval = setInterval(() => createRainElement(), 500);
         }
 
         return () => {

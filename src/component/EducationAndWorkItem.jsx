@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const EducationAndWorkItem = ({ data }) => {
     return (
         <>
-            <Item className="appear">
+            <Item>
                 <div className="flex-content">
                     <div className="left">
                         <h3 className="company-name">{data.companyName || data.institution}</h3>

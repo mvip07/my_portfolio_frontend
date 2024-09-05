@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Contact = () => {
 	return (
-		<ContactP id="contact" className="contacts piece section appear">
+		<ContactP id="contact" className="contacts piece section">
 			<h2 className="section-title">Get In Touch</h2>
 			<p className="section-description">
 				Reach out for collaborations, project inquiries, or consultations. I'm available via email, phone, or social media, and always eager to connect with like-minded professionals. Let’s discuss how we can work together to achieve your goals.			</p>
 			<div className="contact-flex">
-				<div className="send-message appear">
+				<div className="send-message">
 					<div className="form">
 						<h2 className="form-title">Leave us your info</h2>
 						<div className="flex-group">
@@ -31,9 +31,9 @@ export const Contact = () => {
 						<button className="submit-btn">Send Message</button>
 					</div>
 				</div>
-				<div className="contact-information appear">
+				<div className="contact-information">
 					<div className="contact-card">
-						<div className="item appear">
+						<div className="item">
 							<div className="circle">
 								<i className="bx bx-location-plus"></i>
 							</div>
@@ -52,7 +52,7 @@ export const Contact = () => {
 								</div> */}
 							</div>
 						</div>
-						<div className="item appear">
+						<div className="item">
 							<div className="circle">
 								<i className="bx bxs-message-alt"></i>
 							</div>

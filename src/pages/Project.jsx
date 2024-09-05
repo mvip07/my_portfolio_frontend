@@ -7,7 +7,7 @@ export const Project = () => {
     const { data } = useContext(Context)
     const [categoryId, setCategoryId] = useState("")
     return (
-        <ProjectP id="project" className="projects piece section appear">
+        <ProjectP id="project" className="projects piece section">
             <h2 className="section-title">Portfolio</h2>
             <p className="section-description">
                 Explore our diverse portfolio of projects that showcase innovative solutions and technical expertise. From web apps to software tools, each project highlights our commitment to quality and creativity. See how we tackle challenges and deliver impactful, user-friendly solutions.
@@ -38,7 +38,7 @@ export const Project = () => {
 
 const ProjectP = styled.div`
     .categories {
-        gap: 48px;
+        gap: 12px;
         display: flex;
         margin: 48px 0;
         flex-wrap: wrap;

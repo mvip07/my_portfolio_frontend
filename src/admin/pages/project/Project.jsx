@@ -433,7 +433,7 @@ export const Project = () => {
                                     {
                                         data?.categories && data?.categories?.map((category) => (
                                             <option
-                                                defaultValue={category._id} key={category._id}
+                                                value={category._id} key={category._id}
                                                 selected={project?.category?.includes(category._id)}>
                                                 {category.title}
                                             </option>
@@ -447,7 +447,7 @@ export const Project = () => {
                                     {
                                         data?.technologies && data.technologies.map((technology) => (
                                             <option
-                                                defaultValue={technology.title} key={technology._id}
+                                                value={technology._id} key={technology._id}
                                                 selected={project?.technology?.includes(technology._id)}>
                                                 {technology.title}
                                             </option>

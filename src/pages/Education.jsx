@@ -7,7 +7,7 @@ export const Education = () => {
     const { data } = useContext(Context)
     return (
         <>
-            <EducationP id="education" className="education piece section appear">
+            <EducationP id="education" className="education piece section">
                 <h2 className="section-title">Education</h2>
                 <p className="section-description">
                     Discover the academic background that has shaped my career in development. This page highlights my educational achievements, key courses, and certifications that have equipped me with the skills and knowledge essential for success in the tech industry.

@@ -36,7 +36,7 @@ export const useProject = () => {
             active: false,
         },
         pagination: {
-            projects: { currentPage: 1, itemsPerPage: 5 },
+            projects: { currentPage: 1, itemsPerPage: 100 },
             categories: { currentPage: 1, itemsPerPage: 5 },
             technologies: { currentPage: 1, itemsPerPage: 5 },
         }

@@ -96,10 +96,10 @@ export const ProjectItem = ({ getObject, data, setActive, index }) => {
                     </div>
                     <div className="btnGroup">
                         <button className="btn" onClick={() => setActiveCard(!activeCard)}>Reed More</button>
-                        <a href={data.serverLink} className="btn">
+                        <a href={data.serverLink} className="btn" target="_blank">
                             <i className="bx bx-link-external"></i>
                         </a>
-                        <a href={data.githubLink} className="btn">
+                        <a href={data.githubLink} className="btn" target="_blank">
                             <i className="bx bxl-github"></i>
                         </a>
                     </div>
@@ -121,10 +121,10 @@ export const ProjectItem = ({ getObject, data, setActive, index }) => {
                         <button className="btn" onClick={() => setActiveCard(!activeCard)}>
                             <i className="bx bx-left-arrow-alt"></i>
                         </button>
-                        <a href={data.serverLink} className="btn">
+                        <a href={data.serverLink} className="btn" target="_blank">
                             <i className="bx bx-link-external"></i>
                         </a>
-                        <a href={data.githubLink} className="btn">
+                        <a href={data.githubLink} className="btn" target="_blank">
                             <i className="bx bxl-github"></i>
                         </a>
                     </div>

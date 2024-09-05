@@ -6,7 +6,7 @@ export const MyServices = () => {
     const { data } = useContext(Context)
 
     return (
-        <MyServicesP id="service" className="myservices piece section appear">
+        <MyServicesP id="service" className="myservices piece section">
             <h2 className="section-title">my services</h2>
             <p className="section-description">
                 Offering a comprehensive suite of professional services, including development, design, and consulting. Whether you're starting a new project or enhancing an existing one, I provide tailored solutions to help you achieve your goals with precision and excellence.
@@ -15,7 +15,7 @@ export const MyServices = () => {
             <div className="services">
                 {
                     data?.service && data?.service.map((i, index) => (
-                        <div className="item appear" key={index}>
+                        <div className="item" key={index}>
                             <img className="service-img" src={i.icon} alt="Service Image" />
                             <h3 className="service-title">{i.title}</h3>
                             {
